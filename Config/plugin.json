@@ -1,0 +1,14 @@
+{
+	"name": "Dropzone",
+	"description": "Dropzone plugin",
+
+	"author": "Mohammad Saleh",
+	"authorEmail": "mohammadsaleh.sayari@gmail.com",
+	"authorUrl": "",
+
+	"dependencies": {
+		"plugins": [
+			"Nodes"
+		]
+	}
+}

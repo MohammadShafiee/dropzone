@@ -1,0 +1,16 @@
+{
+    "default" : {
+        "target_action" : ["Products/admin_add", "Products/admin_edit"],
+        "title" : "Pictures",
+        "upload_url" : "/admin/dropzone/dropzone_uploads/upload",
+        "template_element" : "Shop.dropzone_template",
+        "dropzone_position" : "metabox"
+    },
+    "another_one" : {
+        "target_action" : ["Products.admin_add", "Products.admin_edit"],
+        "title" : "Box Title",
+        "upload_url" : "/admin/file_manager/attachments/add",
+        "template_element" : "Dropzone.template",
+        "dropzone_position" : "tab"
+    }
+}
