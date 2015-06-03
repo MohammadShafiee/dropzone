@@ -8,10 +8,12 @@ class Dropzone{
         if(empty($configName)){
             $configName = 'default';
         }
-        $jsonFile = new File(CakePlugin::path($plugin) . 'Config' . DS . 'dropzone.json');
-        $json = $jsonFile->read();
-        $json = json_decode($json, true);
-        self::__processDropzone($json[$configName]);
+        if(CakePlugin::loaded($plugin)){
+            $jsonFile = new File(CakePlugin::path($plugin) . 'Config' . DS . 'dropzone.json');
+            $json = $jsonFile->read();
+            $json = json_decode($json, true);
+            self::__processDropzone($json[$configName]);
+        }
     }
 
     private static function __processDropzone($config = array()){
